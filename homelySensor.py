@@ -50,7 +50,7 @@ while True:
                                         if C[0] == Sensors.get(section,"romId"):
                                                 channel=Sensors.get(section,"Channel")
                                                 client.celsiusWrite(channel, C[1])
-                                                print "Sending "+C[1]+" to channel "+channel
+                                                #print "Sending "+C[1]+" to channel "+channel
         timestamp = time.time()                              
                         
 

@@ -1,0 +1,11 @@
+[Unit]
+Description=HomelySensor service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /opt/homelySensors/homelySensor.py
+User=root
+
+[Install]
+WantedBy=multi-user.target
